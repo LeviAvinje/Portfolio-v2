@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+<div id="section1"></div>
+    <div id="bilde">
+        <div id="bildeKontekst">
+            <div id="navn"> < Levi Andre Vinje > </div>
+            <div id="jegEr"> { Jeg er en Koder }</div>
+            <div id="jegKan" > ; jeg kan masse ;</div>
+            <div id="jegKan2" style="font-size: 10px; margin-left: 290px;"> (click meg)</div>
+                <div class="options">
+                    <div id="prosjekter" onclick="scroll1()">Prosjekter</div>
+                    <div id="kontakt_meg" onclick="scroll2()">Kontakt meg</div>
+                    <div id="om_meg" onclick="scroll3()">Om meg</div>
+                </div>
+        </div>
+    </div>
+    <div id="tekst">
+        <h3 id="teskt1">hei folksen jeg heter levi andre vinje og er god til å kode masse</h3>
+    </div>
+    <div id="section2">
+        <h1>prosjekter !</h1>
+        <img src="arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" onclick="scrollopp1()" id="up2"alt="Icon" width="50px" height="50px"> 
+    </div>
+
+    <div id="section3">
+        <h1>Kontatk meg !</h1>
+        <img src="arrow_upward_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" onclick="scrollopp2()" id="up3"alt="Icon" width="50px" height="50px"> 
+    </div>
+    
+    <script>
+        
+         const toggleVisibility = () => {
+            CM.classList.toggle('hide');
+            
+        };
+
+        const toggleVisibility2 = () => {
+           text.classList.toggle('show');
+            
+        };
+
+            const JG = document.getElementById('jegKan');
+            const CM = document.getElementById('jegKan2');
+            const text = document.getElementById('tekst');
+
+            JG.addEventListener('click', () => {
+                JG.classList.toggle('move'); 
+                toggleVisibility();
+                toggleVisibility2();
+                
+        });
+       
+
+       
+        
+        function scroll1() {
+            document.getElementById('section2').scrollIntoView({ behavior: "smooth"})
+        }
+
+        function scrollopp1() {
+            document.getElementById('section1').scrollIntoView({ behavior: "smooth"})
+        }
+
+        function scroll2() {
+            document.getElementById('section3').scrollIntoView({ behavior: "smooth"})
+        }
+
+        function scrollopp2() {
+            document.getElementById('section2').scrollIntoView({ behavior: "smooth"})
+        }
+    </script>
+</body>
+</html>

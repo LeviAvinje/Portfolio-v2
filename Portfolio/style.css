@@ -1,0 +1,186 @@
+html,body{
+    background-color: #6B8A7A;
+    overflow: hidden;
+}
+
+#section1{
+top: 0;
+}
+
+#bilde {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    background-image: url('IMG_3744.png');
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: black;
+    margin-top: 70px;
+    margin-left:80px;
+    position: relative;
+    box-shadow: -10px 10px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+#bildeKontekst {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: left; 
+    width: 800px;
+    gap: 10px; 
+    margin-left:440px;
+    margin-top: 40px;
+    position: absolute;
+    font-size: 50px;
+    color: #eeecca;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: -10px -2px 7px rgba(0, 0, 0, 0.5);
+}
+
+#tekst{
+    display:none;
+    transition: transform 0.5s ease;
+    margin-top: 200px;
+    margin-right: 800px;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+#tekst.show{
+   display: block;
+}
+
+#tekst1 {
+    flex-direction: column;
+}
+
+
+#navn{
+
+}
+
+#jegEr{
+margin-left: 55px;
+}
+
+#jegKan2{
+    
+}
+
+#jegKan{
+    margin-left: 135px;
+    transition: transform 1s ease;
+}
+
+#jegKan:hover{
+    cursor: pointer;
+}
+
+
+.move{
+    transform: translate(-500px,300px);
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+.options{
+    margin-left: 73vh;
+    font-size: 100px;
+    position: absolute;
+    width: 63vh;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: -20px -10px 20px rgba(0, 0, 0, 0.8);
+}
+
+#prosjekter{
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    
+}
+
+#prosjekter:hover {
+    transform: translate(-90px,0);
+}
+
+#kontakt_meg{
+    margin-bottom: 100px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#kontakt_meg:hover {
+    transform: translate(-80px,0);
+}
+
+#om_meg{
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#om_meg:hover {
+    transform: translate(-80px,0);
+}
+
+
+#section2{
+    margin-top: 120vh;
+    width:400px;
+    height: 950px;
+    z-index: 1;
+
+}
+
+#up2{
+    margin-left: 95vh;
+    z-index: 2;
+    overflow: visible;
+    transform: translateY(-35px);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    
+}
+
+#up2:hover {
+    cursor: pointer;
+    transform: translateY(-35px) scale(1.5);
+    
+   
+}
+
+
+#section3 {
+    margin-top: 20vh;
+    width:400px;
+    height: 950px;
+    z-index: 4;
+}
+
+#up3{
+    margin-left: 95vh;
+    z-index: 2;
+    overflow: visible;
+    transform: translateY(-60px);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    
+}
+
+#up3:hover {
+    cursor: pointer;
+    transform: translateY(-60px) scale(1.5);
+    
+   
+}
