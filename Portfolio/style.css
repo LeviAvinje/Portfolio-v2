@@ -38,6 +38,7 @@ top: 0;
     font-weight: 400;
     font-style: normal;
     text-shadow: -10px -2px 7px rgba(0, 0, 0, 0.5);
+    
 }
 
 #tekst{
@@ -93,6 +94,7 @@ margin-left: 55px;
 
 
 
+
 .options{
     margin-left: 73vh;
     font-size: 100px;
@@ -121,6 +123,24 @@ margin-left: 55px;
     transition: transform 0.5s ease;
 }
 
+#kontakter {
+    width: 400px;
+    height: 300px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    max-width: fit-content;
+    margin-left: 720px;
+    z-index: 5;
+    margin-top: 170px;
+    display: inline-block;
+    color: #eeecca;
+    text-shadow: -10px -2px 7px rgba(0, 0, 0, 0.5);
+
+}
+
+
 #kontakt_meg:hover {
     transform: translate(-80px,0);
 }
@@ -140,7 +160,7 @@ margin-left: 55px;
     width:400px;
     height: 950px;
     z-index: 1;
-
+    scroll-snap-align: start;
 }
 
 #up2{
@@ -150,6 +170,7 @@ margin-left: 55px;
     transform: translateY(-35px);
     transition: transform 0.3s ease;
     transform-origin: center;
+    
     
 }
 
@@ -170,11 +191,13 @@ margin-left: 55px;
 
 #up3{
     margin-left: 95vh;
-    z-index: 2;
+    z-index: 6;
     overflow: visible;
     transform: translateY(-60px);
     transition: transform 0.3s ease;
     transform-origin: center;
+    position: relative;
+    bottom: 93vh;
     
 }
 
@@ -183,4 +206,18 @@ margin-left: 55px;
     transform: translateY(-60px) scale(1.5);
     
    
+}
+
+
+#call  {
+    animation: wiggle 2s infinite ease;
+    
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   
+    50% { transform: rotate(15deg); }
+    
+    100% { transform: rotate(0deg); }
 }
